@@ -5,7 +5,7 @@
  * main - program that generates random valid passwords for 101-crackme
  * Return: 0 (success)
  */
-in main(void)
+int main(void)
 {
 	int pass[100];
 	int i, sum, n;
@@ -21,7 +21,7 @@ in main(void)
 		putchar(pass[i] + '0');
 		if ((2772 - sum) - '0' < 78)
 		{
-			n = 2772 = sum - '0';
+			n = 2772 - sum - '0';
 			sum += n;
 			putchar(n + '0');
 			break;
